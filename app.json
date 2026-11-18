@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Passo - Diário de Viagens",
+    "slug": "passo-diario-de-viagens",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.diario.passo"
+    },
+    "android": {
+      "package": "com.diario.passo",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-image",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "O Passo usa sua localização para mostrar sua posição e encontrar endereços no mapa."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Escolha uma foto para guardar junto ao lugar no seu diário.",
+          "cameraPermission": "Tire uma foto do lugar para registrar sua memória.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Escolha fotos para seus lugares.",
+          "savePhotosPermission": "Salve na galeria as fotos que tirar pelo diário.",
+          "granularPermissions": [
+            "photo"
+          ]
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Tire uma foto para guardar sua viagem.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
