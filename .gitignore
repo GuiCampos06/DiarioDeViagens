@@ -47,17 +47,3 @@ yarn-error.*
 .tools/
 tmp/
 coverage/
-.agents/
-.agent/
-agents/
-.skills/
-skills/
-AGENTS.md
-AGENTS.override.md
-SKILL.md
-skills-lock.json
-.codex/
-.claude/
-.graphifyignore
-.graphifyrc
-graphify-out/
